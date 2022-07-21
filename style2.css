@@ -1,0 +1,432 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0px;
+}
+
+/*------------------------------------------------------
+header
+-------------------------------------------------------*/
+
+header{
+    background-color:  rgb(67, 161, 213);
+    height: 600px;
+    display: flex;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 125px;
+    margin-right: 125px;
+
+    border-radius: 25px;
+    
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 25px;
+
+    text-align: justify;
+}
+#header{
+    width: 100%;
+}
+header h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+header p{
+    font-size: 20px;
+}
+.headerWithoutButton{
+    padding-top: 0px;
+    margin-bottom: 50px;
+}
+header a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#view{
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(23, 62, 105);
+}
+
+header img{
+    width: 75%;
+    padding-left: 100px;
+}
+
+/*------------------------------------------------------
+2nd page sidebar
+-------------------------------------------------------*/
+
+aside{
+    text-decoration: none;
+    background-color: rgb(23, 62, 105);
+    height: 300px;
+    width: 290px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-left: 125px;
+    border-radius: 10px;
+}
+.aside-anchor{
+    height: 67px;
+    width: 250px;
+    background-color: rgb(251, 253, 255);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.aside :hover{
+    color: aliceblue;
+    background-color:rgb(67, 161, 213) ;
+}
+.aside-upcoming{
+    height: 67px;
+    width: 250px;
+
+    color: aliceblue;
+    background-color:rgb(67, 161, 213) ;
+    
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/*------------------------------------------------------
+2nd page main article
+-------------------------------------------------------*/
+#second-page{
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: -40px;
+}
+article{
+    width: 675px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 11px;
+    column-gap: 11px;
+    margin-left: 5px;
+}
+section img{
+    height: 60px;
+    width: 108px;
+}
+.flags{
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+.flag{
+    padding: 30px;
+}
+.up-match{
+    padding: 10px;
+    width: 295px;
+    height: 230px;
+    border: 2px solid rgb(202, 210, 216);
+    border-radius: 10px;
+}
+.info{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0pxs;
+}
+article h1{
+    margin: 10px;
+}
+article h3{
+    margin: 10px;
+}
+
+/*------------------------------------------------------
+footer 
+-------------------------------------------------------*/
+
+footer{
+    height: 450px;
+    background-color: rgb(23, 62, 105);
+    margin-top: 0px;
+
+    
+}
+footer h1{
+    color: aliceblue;
+    margin-top: 160px;
+    margin-bottom: 60px;
+}
+footer hr{
+   
+width: 1320px;
+border: 1px solid black;
+}
+#footer{
+    text-align: center;
+    padding-top: 5px;
+}
+.footer-anchor{
+    
+    margin-left: 30px;
+    margin-right: 30px;
+    color: aliceblue;
+ text-decoration: none;
+}
+#footer-anchor{
+    margin-top: 60px;
+}
+
+footer i{
+    width: 100px;
+    font-size: 50px;
+    text-decoration: none;
+    color: aliceblue;
+    padding-top: 50px;
+  
+}
+#social-media{
+   
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------Responsive--------------------------------------------
+-----------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------
+        Small Device
+------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* Header */
+
+    header{
+        width: 330px;
+        height: 472px;
+        margin: 20px;
+        margin-bottom: 0px;
+        background: rgb(67, 161, 213);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+
+    }
+    header img{
+        width: 50%;
+        margin-bottom: 0px;
+    }
+    #view{
+        width: 120px;
+        height: 30px;
+        padding: 3px;
+        font-size: 50px;
+        position: relative;
+        left: 100px;
+        width: 80px;
+    }
+    header a{
+        font-size: 10px;
+    }
+    #header{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .headerWithoutButton{
+        margin-top: 10px;
+        padding-left: -50%;
+        padding-right: 5%;
+        font-size: 100%;
+    }
+    #description{
+        height: 10%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    #view{
+        font-size: 5%;
+    }
+    
+    /* 2nd Page sidebar */
+
+    #second-page{
+        width: 100%;
+       justify-content: flex;
+        flex-direction: column;
+    } 
+    aside{
+        background: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        width: 100%;
+    }
+    .aside-anchor .aside-blog{
+        justify-content: center;
+        font-size: 2px;
+        
+    }
+    aside{
+        margin-left: 0px;
+        
+    }
+    .aside-anchor{
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
+        background-color: beige;
+    }
+    .aside-upcoming{
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
+    }
+
+    /* 2nd page main article */
+
+    .up-match{
+        flex-direction: column;
+    }
+    .matches{
+        justify-content: center;
+        width: 100%;
+     grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* footer */
+
+    footer{
+        max-height: fit-content;
+        max-width: fit-content;
+    }
+    #footer-anchor{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer h1{
+        margin-top: 30px;
+    }
+    footer hr{
+        display: none;
+    }
+}
+
+
+
+/*----------------------------
+       Medium Device
+------------------------------*/
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    
+    /* header */
+
+    header{
+        background-color:  rgb(67, 161, 213);
+        width: 150%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+    
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    
+        border-radius: 25px;
+        
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 25px;
+    
+        text-align: center;
+    }
+    header img{
+        width: 60%;
+    }
+
+
+    /* 2nd page */
+    article{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    #second-page{
+        width: 100%;
+       justify-content: flex;
+        flex-direction: column;
+    }
+    aside{
+        background: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        width: 150%;
+        justify-content: center;
+    }
+    article{
+        margin-left: 0px;
+        width: 150%;
+        justify-content: center;
+    }
+    .matches{
+        width: 400px;
+    }
+   
+    footer{
+        width: 173%;
+    }
+    #onlyTablet{
+        color: aliceblue;
+        background-color:rgb(67, 161, 213);
+        display: block;
+        font-size: 20px;
+        position: relative;
+        top: 50px;
+        left: 600px;
+        border: 2px solid rgb(46, 46, 79);
+        border-radius: 10px;
+        justify-content: center;
+        display: inline;
+
+        padding: 10px;
+    }
+}
